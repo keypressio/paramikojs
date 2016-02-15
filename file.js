@@ -468,7 +468,7 @@ paramikojs.BufferedFile.prototype = {
   _write_all : function(data, callback) {
     // the underlying stream may be something that does partial writes (like
     // a socket).
-    while (data.length > 0) {
+    do {
       var count = this._write(data, callback, data.length);
       data = data.substring(count);
       if (this._flags & this.FLAG_APPEND) {
@@ -478,7 +478,7 @@ paramikojs.BufferedFile.prototype = {
         this._pos += count;
         this._realpos += count;
       }
-    }
+    } while (data.length > 0);
     /*if (callback) {
       callback();
     }*/

@@ -180,7 +180,7 @@ paramikojs.SFTPFile.prototype = {
     }
     var self = this;
     var read_callback = function(result, eofError, ioError) {
-      if (eofError) {
+      if (eofError || ioError) {
         callback(null);
         return;
       }
