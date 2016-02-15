@@ -11,3 +11,7 @@
 ## Note!
 
 Before you ask, **no** this doesn't work on regular web pages.  Being able to make an SSH connection only works currently in the context of a Firefox add-on which gives provides extra libraries/permissions (i.e. ahem, sockets)
+
+## Build
+
+Type `npm install` to install packages, and `npm run build` to build the files into `dist/paramikojs.min.js`.
