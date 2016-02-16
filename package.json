@@ -1,0 +1,24 @@
+{
+  "name": "paramikojs",
+  "version": "1.0.0",
+  "description": "## About",
+  "main": "readme.md",
+  "scripts": {
+    "uglify:dist": "uglifyjs src/**.js -o dist/paramikojs.min.js",
+    "clean": "rm -rf dist/*",
+    "build": "npm run uglify:dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keypressio/paramikojs.git"
+  },
+  "author": "",
+  "license": "LGPL-2.1",
+  "bugs": {
+    "url": "https://github.com/keypressio/paramikojs/issues"
+  },
+  "homepage": "https://github.com/keypressio/paramikojs#readme",
+  "dependencies": {
+    "uglify-js": "latest"
+  }
+}
