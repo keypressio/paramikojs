@@ -4,7 +4,7 @@
   "description": "## About",
   "main": "readme.md",
   "scripts": {
-    "uglify:dist": "uglifyjs src/**.js -o dist/paramikojs.min.js",
+    "uglify:dist": "uglifyjs **/*.js -o dist/paramikojs.min.js",
     "clean": "rm -rf dist/*",
     "build": "npm run uglify:dist"
   },
