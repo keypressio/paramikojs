@@ -1,4 +1,4 @@
-Components.utils.import("resource://services-sync/util.js");
+Components && Components.utils.import("resource://services-sync/util.js");
 
 kryptos.cipher.nss3 = function(key, algorithm, mode, iv, counter) {
   this.key = base64.encodestring(key);

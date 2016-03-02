@@ -3,11 +3,6 @@
   "version": "1.0.0",
   "description": "## About",
   "main": "readme.md",
-  "scripts": {
-    "uglify:dist": "uglifyjs **/*.js -o dist/paramikojs.min.js",
-    "clean": "rm -rf dist/*",
-    "build": "npm run uglify:dist"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/keypressio/paramikojs.git"
@@ -18,7 +13,15 @@
     "url": "https://github.com/keypressio/paramikojs/issues"
   },
   "homepage": "https://github.com/keypressio/paramikojs#readme",
-  "dependencies": {
-    "uglify-js": "latest"
+  "devDependencies": {
+    "chalk": "^1.1.1",
+    "figlet": "^1.1.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^0.11.1",
+    "jit-grunt": "^0.9.1",
+    "jshint-stylish": "^2.1.0",
+    "time-grunt": "^1.3.0"
   }
 }
